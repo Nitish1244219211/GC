@@ -19,7 +19,7 @@ A simple **PHP & MySQL based chatting website** where users can register, log in
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 GC/
 upload/               # Folder for profile images (including default image)
@@ -56,36 +56,7 @@ navchat.php           # Navbar used in chatting room
 
 ## Installation & Setup
 
-1. **Clone the repository**  
-   ```bash
-   git clone <repo-link>
-   cd GC
-   ```
-
-2. **Import the database schema**  
-   - Open phpMyAdmin (or MySQL CLI)  
-   - Create a database, e.g. `gc_chat`  
-   - Import `morphed_rage.sql` 
-
-3. **Configure database connection**  
-   - Open `dbconnect.php`  
-   - Update DB credentials:  
-     ```php
-     $servername = "localhost";
-     $username   = "root";
-     $password   = "";
-     $dbname     = "morphed_rage";
-     ```
-
-4. **Run the project**  
-   - Place the `GC` folder in your web server root (e.g., `htdocs` for XAMPP, `www` for WAMP, or `/var/www/html` for Apache).  
-   - Start Apache & MySQL from XAMPP/WAMP.  
-   - Open in browser:  
-     ```
-     http://localhost/GC/index.php
-     ```
-
----
+coming soon
 
 ## Usage
 - Register a new account (if registration is enabled).  
@@ -94,22 +65,22 @@ navchat.php           # Navbar used in chatting room
 
 ---
 
-## Screenshots
-You can add images/screenshots here to showcase the site:  
+## Screenshots  
 
 ![Signup Page](/assets/signup.png) 
+   **Signup Page**
 ---
 ![Login Page](/assets/login.png) 
+   **Login Page**
 --- 
 ![Page after login Page](/assets/page-after-login.png)  
+   **Page after login Page**
 ---
 ![Chat Page](/assets/chat.png)  
+   **Chat Page**
 ---
 ![SQ form Page](/assets/sq-form.png)  
----
-
-*(Store your images inside `GC/assets/images/` and update the paths above.)*  
-
+   **SQ(security questionnaire) form Page**
 ---
 
 ## Help!!!
