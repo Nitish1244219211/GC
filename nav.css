@@ -1,0 +1,22 @@
+.profile_pic{
+  max-width: 50px;
+  border-radius:10px;
+  margin-right:15px;
+  height:35px;
+}
+.offcanvas{
+  border-radius:80px;
+  background-color: #ffffff;
+  color: #000000;
+  opacity: .85;}
+
+footer{
+color:white;
+background:black;
+width:100%;
+position:fixed;
+bottom:0;
+text-align:center;
+max-height:20px;}
+
+

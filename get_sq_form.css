@@ -1,0 +1,13 @@
+body
+{
+  background:url("pxl.png") no-repeat top center fixed;
+  height:100%;
+//  top:50%;
+  background-size:cover;
+  //background-repeat:no-repeat;
+}
+#sq{
+position:absolute;
+margin:auto;
+vertical-align:middle;
+}

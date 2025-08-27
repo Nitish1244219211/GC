@@ -1,0 +1,23 @@
+.body{
+  background-color:#EBECEE;
+}
+section{
+  margin:50px;
+}
+.img{
+  width:150px;
+  border-radius:40px;
+  padding:10px;
+  max-height:250px;
+}
+form{
+  background:#FCFCFC;
+  border-radius:15px;
+  padding:15px;
+}
+.name{
+  display:flex;
+  justify-content: space-between;
+  gap:10px;
+}
+
