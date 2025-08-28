@@ -56,7 +56,76 @@ navchat.php           # Navbar used in chatting room
 
 ## Installation & Setup
 
-coming soon
+NOTE: This site works with php, mysql and hell lot of things where we will need one stop solution for stuff like database management dashboard like phpmyadmin and server.
+<br>
+I'll be explaining this setup to you like to a 7 year kid but still you face any challenge in this, feel free to contact me anytime :)
+<br>
+For that we will need to download any web server like XAMP/WAMP.
+<br>
+I will be using XAMP but you can use other as well.
+1. **Webserver Setup & Installation**
+   - Download the XAMP using browser.
+   - After successful installtion & setup in your desired drive (say drive: D) search for htdocs folder in the XAMP folder created after installation.
+   <br>
+   eg. Path for htdocs in my system is as follow:
+
+      ```bash
+      D:\apps\xamp-new\htdocs
+      ```
+   - Go to htdocs and follow these steps:
+      - Move the file named index to new folder (say real-index).
+      - Create a new folder(say Site) for storing content of site.[OPTIONAL].
+      <br>
+      NOTE:Reason of creating this folder will be expalined later.
+
+2. **Cloning Site from Github**   
+   - Open your code editor(say VS Code).
+   - Open the folder Site created in htdocs recently or just open htdocs if you didn't follow that optional step, it's completely fine. 
+   - Open the terminal in the code editor.
+   You can use these shortcut for this as well.
+      ```bash
+      Ctrl + Shift + `
+      ```
+      OR
+      ```bash
+      Ctrl + Shift + 5
+      ```
+   - Enter following command to clone all the files from my github repository to your local system:
+       ```bash
+      git clone https://github.com/Nitish1244219211/GC.git
+    
+      ```
+   - Now all the required files and system requirements are on your local system and we are good to go even without internet which can obviously save by turning off your internet connection if you want to ;)
+
+3. **Database & Server setup**
+   - Open the XAMP and click on start button adjacent to Apache & Mysql as shown in the reference image.
+   ![xamp-start](/assets/xamp-start.png) 
+   **XAMP CONTROL PANEL**
+   - After successfully running both now click on Admin button adjacent to Mysql to open PhpMyAdmin in your browser.
+   - There create a new database named morphed_rage
+   - Now click on the import button and search for morphed_rage.sql file in the files cloned from github.
+   eg. Path for this file in my system is like:
+      ```bash
+      D:\apps\xamp-new\htdocs\Site\morphed_rage.sql
+      ```
+      Image for the reference in phpmyadmin is below:
+       ![PhpMyAdmin](/assets/phpmyadmin.png) 
+   **PhpMyAdmin**
+
+      NOTE:This will load all the structure used in the database along with some dummies so that you didn't feel lonely over here...
+4. **Run the Site**
+   - Go to your browser the search for this for 
+   <br>
+      If folder Site is created:
+      ```bash
+      http://localhost/Site
+      ```
+      If folder Site isn't created:
+      ```bash
+      http://localhost/
+      ```
+
+Boooom!!! Here is your Site...
 
 ## Usage
 - Register a new account (if registration is enabled).  
