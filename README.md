@@ -73,14 +73,14 @@ I will be using XAMP but you can use other as well.
       D:\apps\xamp-new\htdocs
       ```
    - Go to htdocs and follow these steps:
-      - Move the file named index to new folder (say real-index).
+      - Move the file named `index` to new folder (say real-index).
       - Create a new folder(say Site) for storing content of site.[OPTIONAL].
       <br>
       NOTE:Reason of creating this folder will be expalined later.
 
 2. **Cloning Site from Github**   
    - Open your code editor(say VS Code).
-   - Open the folder Site created in htdocs recently or just open htdocs if you didn't follow that optional step, it's completely fine. 
+   - Open the folder Site created in `htdocs` recently or just open `htdocs` if you didn't follow that optional step, it's completely fine. 
    - Open the terminal in the code editor.
    You can use these shortcut for this as well.
       ```bash
@@ -102,8 +102,8 @@ I will be using XAMP but you can use other as well.
    ![xamp-start](/assets/xamp-start.png) 
    **XAMP CONTROL PANEL**
    - After successfully running both now click on Admin button adjacent to Mysql to open PhpMyAdmin in your browser.
-   - There create a new database named morphed_rage
-   - Now click on the import button and search for morphed_rage.sql file in the files cloned from github.
+   - There create a new database named `morphed_rage`
+   - Now click on the import button and search for `morphed_rage.sql` file in the files cloned from github.
    eg. Path for this file in my system is like:
       ```bash
       D:\apps\xamp-new\htdocs\Site\morphed_rage.sql
@@ -153,10 +153,36 @@ Boooom!!! Here is your Site...
 ---
 
 ## Help!!!
-this is just an experiment site from my side which means it will definetly have multiple areas to work on and has huge scope for optiization like saving pics for user profile in compress format in server, more seemless and imersing experience for users.
+This is just an experimental site from my side which means it will definitely have multiple areas to work on and has huge scope for optiization like saving pics for user profile in compress format in server, more seemless and imersing experience for users.
 
 Feel free to collaborate and contact me in my technicalities regarding this site.
 
 Any suggestions/feedback...
 I'm open to all :)
       
+## FAQS & Error Debugging Recomendations
+ - ##### My Apache or Mysql isn't starting at all, its showing like port being used or blocked something...
+   Solution: By default, Apache use port 80 or 8080 & Mysql uses 3306 to provide it's services.
+   <br>
+   Most common reason for this your system is running some other not so necessary service(like Skype) through that port.
+   <br>
+   You can either stop that unnecessary service or change the default port of these required services.
+   Follow these steps:
+   
+   - Open cmd(command line) and use this command to check which service is using port `80` or `3306`.
+   Let's say its Mysql.
+      ```bash
+       netstat -ano | findstr :3306
+      ```
+   - This will list down the services using the `3306` port.
+   Check their PID on extreme right side(say it is 4).
+   - Now to check the name of the service enter:
+      ```bash
+      tasklist /svc /fi "pid eq 4"
+      ```
+      This give service name in IMAGE NAME column(say WinrRM).
+   - Now to services from the start button/window button.
+   A list of services running will appear.
+   - Search for that specific service, click on it and click on `Stop the service`
+   - Now try to start the Apache or Mysql.
+   Hope this helps...
