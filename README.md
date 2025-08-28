@@ -84,11 +84,11 @@ I will be using XAMP but you can use other as well.
    - Open the terminal in the code editor.
    You can use these shortcut for this as well.
       ```bash
-      Ctrl + Shift + `
+      Ctrl + Shift + 5
       ```
       OR
       ```bash
-      Ctrl + Shift + 5
+      Ctrl + Shift + `
       ```
    - Enter following command to clone all the files from my github repository to your local system:
        ```bash
