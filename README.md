@@ -73,7 +73,7 @@ I will be using XAMP but you can use other as well.
       D:\apps\xamp-new\htdocs
       ```
    - Go to htdocs and follow these steps:
-      - Move the file named `index` to new folder (say real-index).
+      - Move the file named `index` to new folder (say real-index).[recommended but it is also optional]
       - Create a new folder(say Site) for storing content of site.[OPTIONAL].
       <br>
       NOTE:Reason of creating this folder will be expalined later.
@@ -106,7 +106,7 @@ I will be using XAMP but you can use other as well.
    - Now click on the import button and search for `morphed_rage.sql` file in the files cloned from github.
    eg. Path for this file in my system is like:
       ```bash
-      D:\apps\xamp-new\htdocs\Site\morphed_rage.sql
+      D:\apps\xamp-new\htdocs\Site\GC\morphed_rage.sql
       ```
       Image for the reference in phpmyadmin is below:
        ![PhpMyAdmin](/assets/phpmyadmin.png) 
@@ -119,12 +119,12 @@ I will be using XAMP but you can use other as well.
    If folder Site is created:
    
    ```bash
-   http://localhost/Site
+   http://localhost/Site/GC
    ```
 
    If folder Site isn't created:
    ```bash 
-   http://localhost/
+   http://localhost/GC
    ```
 
 Boooom!!! Here is your Site...
