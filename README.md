@@ -117,11 +117,11 @@ I will be using XAMP but you can use other as well.
    - Go to your browser the search for this for 
    <br>
       If folder Site is created:
-      ```bash
+   ```bash
       http://localhost/Site
-      ```
+   ```
       If folder Site isn't created:
-      ```bash
+   ```bash
       http://localhost/
       ```
 
